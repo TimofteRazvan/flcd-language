@@ -1,0 +1,32 @@
+Alphabet:
+a. Upper (A-Z) and lower case (a-z) letters of English alphabet
+b. Underline character '_'
+c. Decimal digits (0-9)
+__________________________________________________________________________________________________________________________
+1. Lexic:
+a. Special symbols
+- operators + - * / < <= >= > = % || &&
+- separators : {} space () [];
+- reserved words: array int char bool const if else read write while string and or
+
+b. Identifiers
+- a sequence of letters and digits, first character can only be a letter or underscore:
+<identifier> ::= <first><valid_sequence>
+<valid_sequence> ::= <letter><valid_sequence> | _<valid_sequence> | <digit><valid_sequence>
+<first> ::= <letter> | _
+<letter> ::= A | B | ... | Z | a | b | ... | z
+<digit> ::= 0 | <non_zero_digit>
+<non_zero_digit> ::= 1 | 2 | ... | 9
+
+c. Constants
+1. integer - rule:
+<integer> ::= + | - | <unsigned_integer>
+<unsigned_integer> ::= <non_zero_digit> | <unsigned_integer><digit>
+2. character - rule:
+<character> ::= <letter> | <digit>
+3. string - rule:
+<string> ::= "<chars>"
+<chars> ::= <char> | <char><chars>
+<char> ::= <letter> | <digit>
+4. boolean - rule:
+<boolean> ::= true | false
