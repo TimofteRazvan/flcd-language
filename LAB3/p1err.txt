@@ -1,0 +1,17 @@
+int 1a;
+int 2b;
+int c;
+int maxInt;
+read(a);
+read(b);
+read(c);
+if (a > b) {
+	maxInt = a;
+}
+else {
+	maxInt = b;
+}
+if (a < c)  {
+	maxInt = c;
+}
+write(maxInt);
