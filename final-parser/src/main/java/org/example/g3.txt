@@ -1,0 +1,8 @@
+E R T Y F
++ * i ( )
+E
+E -> T R
+R -> + T R| e
+T -> F Y
+Y -> * F Y | e
+F -> ( E ) | i

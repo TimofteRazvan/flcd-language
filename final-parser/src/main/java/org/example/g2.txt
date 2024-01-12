@@ -1,0 +1,34 @@
+type declaration arraydec assignstmt expression sign constants const character stmt iostmt ifstmt whilestmt relations condition
++ ; [] - * / ( ) [ ] { } < > <= >= != == while if = else array bool char int read write
+type
+type -> bool
+type -> char
+type -> int
+declaration -> type identifier ;
+arraydec -> array identifier [] ;
+assignstmt -> identifier = expression ;
+expression -> constants sign constants
+expression -> constants 
+sign -> + 
+sign -> -
+sign -> * 
+sign -> /
+constants -> const 
+constants -> character
+iostmt -> read identifier ; 
+iostmt -> write identifier ;
+ifstmt -> if ( condition ) { stmt } 
+ifstmt -> if ( condition ) { stmt } else { stmt }
+stmt -> iostmt 
+stmt -> ifstmt 
+stmt -> whilestmt 
+stmt -> assignstmt
+stmt -> stmt stmt
+relations -> < 
+relations -> <=
+relations -> ==
+relations -> !=
+relations -> >
+relations -> >=
+whilestmt -> while ( expression relations expression ) { stmt }
+condition -> expression relations expression
