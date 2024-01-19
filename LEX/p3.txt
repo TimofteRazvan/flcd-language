@@ -1,0 +1,12 @@
+P3
+
+int n;
+int i;
+i = 0;
+array(int, n) a;
+while(i < n) {
+	read(a[i]);
+	sum = sum + a;
+	i = i + 1;
+}
+write(sum);
